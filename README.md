@@ -51,6 +51,10 @@
 
 如果你不懂这个操作，也可以直接在 Issues 提交你的 Prompts。目前大部分 Prompts 来自于 [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)，当然，这个仓库大多数也是翻译的 [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)，一并感谢。
 
+```
+没想到有一天人类被逼着研究怎么用人类的语言跟机器沟通. 
+```
+
 ### 要求
 
 - 把需要输入的内容放在最后，可以提示 ChatGPT 开始输入了，比如 “我的第一句话是：”。
@@ -58,6 +62,3 @@
 - 添加到结尾，我会定期整理。
 
 
-## License
-
-[MIT](./LICENSE)
