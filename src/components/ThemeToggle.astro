@@ -1,0 +1,33 @@
+<style>
+  .sun {
+    fill: black;
+  }
+  .moon {
+    fill: transparent;
+  }
+  :global(html.dark) .sun {
+    fill: transparent;
+  }
+  :global(html.dark) .moon {
+    fill: grey;
+  }
+</style>
+
+<script is:inline>
+  const persistentTheme = localStorage.getItem("theme")
+  const darkSchema = window.matchMedia("(prefers-color-scheme: dark)")
+
+  function listener() {
+    document.documentElement.classList.toggle("dark", darkSchema?.matches)
+  }
+
+  if (persistentTheme) {
+    document.documentElement.classList.toggle(
+      "dark",
+      persistentTheme === "dark"
+    )
+  } else {
+    darkSchema.addEventListener("change", listener)
+    document.documentElement.classList.toggle("dark", darkSchema?.matches)
+  }
+</script>
