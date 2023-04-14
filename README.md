@@ -1,16 +1,17 @@
 # ChatGPT-Web
 
+小白也可以搭建自己的ChatGPT网站！步骤简单，一学就会。
+
 ![](assets/intro.png)
 
-### 本地开发和调试:
+### 1）本地开发和调试:
 
 1. 升级到 `node18`
 2. 如果在内地部署 需要配置好环境变量 `SOCKS_PROXY` 我设置的是 `export SOCKS_PROXY=socks5://127.0.0.1:1080`因为内地需要通过代理访问API 内地有dns污染 hosts里要加 `52.152.96.252 api.openai.com` 这个是api官方域名的解析ip
 3. `pnpm i` 安装依赖。
 4. `pnpm run build && node server.js` 打包和运行 然后使用`http://localhost:80` 就能访问了
 
-### 环境变量
-
+### 2）环境变量设置
 
 环境变量可以用`export` 也可以在.env文件里设置 `cp .env.example .env`
 
@@ -28,7 +29,7 @@
 将 `.env.example` 文件修改为 `.env`，在 `.env` 中设置。
 
 
-### 默认设置
+### 3）ChatGPT默认设置
 
 > 记得删除注释，或者直接复制上面表格里的。
 
@@ -43,22 +44,16 @@
 }
 ```
 
-## 提交你的 Prompts
+##  4） Prompts
 
-1. Fork 本项目。
-2. 修改 `prompts.md`。
-3. Pull Request 即可。
-
-如果你不懂这个操作，也可以直接在 Issues 提交你的 Prompts。目前大部分 Prompts 来自于 [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)，当然，这个仓库大多数也是翻译的 [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)，一并感谢。
+目前大部分 Prompts 来自于 [awesome-chatgpt-prompts-zh](https://github.com/PlexPt/awesome-chatgpt-prompts-zh)，当然，这个仓库大多数也是翻译的 [awesome-chatgpt-prompts](https://github.com/f/awesome-chatgpt-prompts)，一并感谢。
 
 ```
 没想到有一天人类被逼着研究怎么用人类的语言跟机器沟通. 
 ```
 
-### 要求
+### 5）如何使用？
 
 - 把需要输入的内容放在最后，可以提示 ChatGPT 开始输入了，比如 “我的第一句话是：”。
 - 尽可能去优化已有的 Prompts，而不是重复添加。
-- 添加到结尾，我会定期整理。
-
 
