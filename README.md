@@ -2,7 +2,7 @@
 
 小白也可以搭建自己的ChatGPT网站！步骤简单，一学就会。
 
-![](assets/intro.png)
+![](./assets/intro.png)
 
 **有任何问题，可以去星球交流，目前设置了最低数字！**
 ![知识星球 优惠](https://s1.ax1x.com/2023/04/14/ppzBhsH.jpg)
